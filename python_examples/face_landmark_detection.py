@@ -62,6 +62,7 @@ if len(sys.argv) != 3:
     exit()
 
 predictor_path = sys.argv[1]
+#predictor_path = "/Users/leahwest/Desktop/projectrepository-creative-coders-4/dlib/python_examples/shape_predictor_68_face_landmarks.dat"
 faces_folder_path = sys.argv[2]
 
 detector = dlib.get_frontal_face_detector()
@@ -92,3 +93,4 @@ for f in glob.glob(os.path.join(faces_folder_path, "*.jpg")):
 
     win.add_overlay(dets)
     dlib.hit_enter_to_continue()
+ 
